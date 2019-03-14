@@ -7,5 +7,13 @@
         "php": ">=7.0"
     },
     "license": "GPL-2.0-only",
-    "keywords" : ["i18n", "internationalisation", "indieweb", "Known"]
+    "keywords" : ["i18n", "internationalisation", "indieweb", "Known"],
+    "authors": [
+	{
+	    "name": "Marcus Povey",
+	    "email": "marcus@marcus-povey.co.uk",
+	    "homepage": "https://www.marcus-povey.co.uk",
+	    "role": "Developer"
+	}
+    ]
 }
