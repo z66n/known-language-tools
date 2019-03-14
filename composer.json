@@ -1,0 +1,11 @@
+{
+    "name": "mapkyca/known-language-tools",
+    "description": "I18N dev tools for Known",
+    "version": "1.0",
+    "homepage" : "https://www.marcus-povey.co.uk/",
+    "require": {
+        "php": ">=7.0"
+    },
+    "license": "GPL-2.0-only",
+    "keywords" : ["i18n", "internationalisation", "indieweb", "Known"]
+}
