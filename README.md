@@ -14,4 +14,4 @@ This contains development tools for creating .pot files.
 ## See
 
 * Author: Marcus Povey <https://www.marcus-povey.co.uk>
-* Blog post <https://www.marcus-povey.co.uk/2019/04/04/improved-known-i18n-development-tools/>
+* Blog post <https://www.marcus-povey.co.uk/2019/04/15/improved-known-i18n-development-tools/>
