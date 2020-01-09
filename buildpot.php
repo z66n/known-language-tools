@@ -2,9 +2,9 @@
 
 /**
  * Script to build a .pot Gettext language file.
- * 
+ *
  * Usage: cat MyFile.php | php buildpot.php > strings.pot
- * 
+ *
  * @author Marcus Povey <marcus@marcus-povey.co.uk>
  * @package Known-Language-Tools
  */
@@ -33,13 +33,16 @@ foreach ($filenames as $filename) {
                 $offset = $translation[1];
                 $linenumber = getLineNumber($file, $offset);
 
-                $normalised_string = str_replace('"', '\"', $string);
+                $string = str_replace("\'","'",$string);
+                $string = str_replace('\"','"',$string);
+                //$normalised_string = str_replace('"', '\"', $string);
+                $normalised_string = addcslashes($string, '"');
 
                 if (!in_array($normalised_string, $handled)) {
                     echo "#: $filename:$linenumber\n";
                     echo "msgid \"$normalised_string\"\n";
                     echo "msgstr \"\"\n\n";
-                    $handled[] = $normalised_string;
+                    $handled[] = $normalised_string; // duplication prevention
                 }
             }
         }
