@@ -1,7 +1,7 @@
 {
     "name": "mapkyca/known-language-tools",
     "description": "I18N dev tools for Known",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "homepage" : "https://github.com/mapkyca/known-language-tools/",
     "require": {
         "php": ">=7.0"
