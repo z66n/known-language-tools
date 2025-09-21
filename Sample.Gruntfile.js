@@ -24,8 +24,14 @@ module.exports = function (grunt) {
 	execSync('touch ./languages/' + pot); // Make sure it exists, if we're going to remove (for broken builds)
 	execSync('rm ./languages/' + pot); // Remove existing
 	
-	execSync('find . -type f -regex ".*\.php" | php vendor/mapkyca/known-language-tools/buildpot.php >> ./languages/' + pot); 
+	const fs = require('fs');
+
+	const output = execSync(
+	  'find ./Pages ./templates -type f -name "*.php" | php ./vendor/z66n/known-language-tools/buildpot.php'
+	);
 	
+	fs.writeFileSync('./languages/' + pot, output);
+
     });
 
 };

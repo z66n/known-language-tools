@@ -1,10 +1,10 @@
 {
-    "name": "mapkyca/known-language-tools",
+    "name": "z66n/known-language-tools",
     "description": "I18N dev tools for Known",
-    "version": "1.0.4",
-    "homepage" : "https://github.com/mapkyca/known-language-tools/",
+    "version": "1.0.5",
+    "homepage" : "https://github.com/z66n/known-language-tools/",
     "require": {
-        "php": ">=7.0"
+        "php": ">=8.1"
     },
     "license": "GPL-2.0-only",
     "keywords" : ["i18n", "internationalisation", "indieweb", "Known"],
@@ -13,6 +13,12 @@
 	    "name": "Marcus Povey",
 	    "email": "marcus@marcus-povey.co.uk",
 	    "homepage": "https://www.marcus-povey.co.uk",
+	    "role": "Developer"
+	},
+    {
+	    "name": "z66n",
+	    "email": "47192580+z66n@users.noreply.github.com",
+	    "homepage": "https://github.com/z66n/",
 	    "role": "Developer"
 	}
     ]

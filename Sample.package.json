@@ -1,8 +1,12 @@
 {
-  "name": "MyPlugin",
-  "version": "1.0.0",
-  "description": "This is an example plugin package.json",
-  "devDependencies": {
-    "grunt": "^1.0.3"
-  }
+    "name": "MyPlugin",
+    "version": "1.0.0",
+    "description": "This is an example plugin package.json",
+    "devDependencies": {
+        "grunt": "^1.6.1",
+        "grunt-cli": "^1.5.0"
+    },
+    "scripts": {
+      "grunt": "grunt"
+    }
 }

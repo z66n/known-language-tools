@@ -4,9 +4,9 @@ This contains development tools for creating .pot files.
 
 ## Usage
 
-* In your plugin, require this dependency: ``` composer require mapkyca/known-language-tools --dev ```
-* Copy and rename ```vendor/mapkyca/known-language-tools/Sample.Gruntfile.js``` to ``` ./Gruntfile.js ```
-* Copy and rename ```vendor/mapkyca/known-language-tools/Sample.package.json``` to ``` ./package.json ``` and edit accordingly
+* In your plugin, require this dependency: ``` composer require z66n/known-language-tools --dev ```
+* Copy and rename ```vendor/z66n/known-language-tools/Sample.Gruntfile.js``` to ``` ./Gruntfile.js ```
+* Copy and rename ```vendor/z66n/known-language-tools/Sample.package.json``` to ``` ./package.json ``` and edit accordingly
 * Make a ``` ./languages ``` directory in your project
 * Install grunt, and its dependencies (usually ``` npm install --only=dev ```)
 * ``` grunt build-lang ```

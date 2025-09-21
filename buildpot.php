@@ -6,12 +6,13 @@
  * Usage: cat MyFile.php | php buildpot.php > strings.pot
  *
  * @author Marcus Povey <marcus@marcus-povey.co.uk>
+ * @author z66n <47192580+z66n@users.noreply.github.com>
  * @package Known-Language-Tools
  */
 
 
 $in = file_get_contents("php://stdin");
-$filenames = explode("\n", $in);
+$filenames = array_filter(array_map('trim', explode("\n", $in)));
 $handled = [];
 
 function getLineNumber($content, $charpos)
